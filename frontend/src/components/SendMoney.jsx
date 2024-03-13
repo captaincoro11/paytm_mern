@@ -50,7 +50,7 @@ const SendMoney = () => {
 
                     try{
 
-                      const response = await axios.post("http://localhost:8080/api/v1/account/transfer", {
+                      const response = await axios.post("https://paytm-mern-backend1.vercel.app/api/v1/account/transfer", {
                             amount,
                              to:id,
                               }, {
