@@ -67,7 +67,7 @@ import Swal from  'sweetalert2'
     <button  onClick={async(e)=>{
         e.preventDefault();
         try{
-          const response = await axios.post("http://localhost:8080/api/v1/user/signup", {
+          const response = await axios.post("https://paytmmern.vercel.app/api/v1/user/signup", {
               username,
               firstName,
               lastName,
