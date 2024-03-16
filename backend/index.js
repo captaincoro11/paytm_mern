@@ -14,7 +14,7 @@ const port = 8080;
 connectDatabase(process.env.MONGO_URI);
 
 app.use(cors({
-    origin: 'https://paytm-frontend-eight.vercel.app', // Allow requests from this origin
+    origin: 'https://paytm-frontend-rhmv83s5g-pranjuls-projects.vercel.app', // Allow requests from this origin
     methods: ['GET', 'POST'], // Allow only specified methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow only specified headers
 }));
