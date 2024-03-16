@@ -44,7 +44,7 @@ import Swal from  'sweetalert2'
 
 
   return (
-    <div className='h-screen bg-slate-800 flex justify-center items-center'>
+    <div className='h-lvh bg-slate-800 flex justify-center items-center'>
     <div className='bg-white flex justify-center items-center w-full mt-6 rounded-md sm:w-7/12 '>
     <div className='w-full h-full flex-col justify-center items-center '>
     <h1 className='font-bold  text-5xl flex justify-center mt-8'>SignUp</h1>
@@ -67,7 +67,7 @@ import Swal from  'sweetalert2'
     <button  onClick={async(e)=>{
         e.preventDefault();
         try{
-          const response = await axios.post("https://paytm-mern-backend1.vercel.app/api/v1/user/signup", {
+          const response = await axios.post("http://localhost:8080/api/v1/user/signup", {
               username,
               firstName,
               lastName,
