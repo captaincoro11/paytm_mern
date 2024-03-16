@@ -14,7 +14,7 @@ const port = 8080;
 connectDatabase(process.env.MONGO_URI);
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from this origin
+    origin: 'http://localhost:5173/', // Allow requests from this origin
     methods: ['GET', 'POST'], // Allow only specified methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow only specified headers
   }));
