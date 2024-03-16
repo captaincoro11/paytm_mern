@@ -11,7 +11,7 @@ dotenv.config();
 const port = 8080;
 
 
-connectDatabase(process.env.MONGO_URI);
+connectDatabase(process.env.MONGOURI);
 
 app.use(cors({
     origin: 'http://localhost:5173', // Allow requests from this origin
