@@ -16,7 +16,7 @@ const Dashboard = () => {
     useEffect(()=>{
         const token = localStorage.getItem('token')
 
-        axios.get('http://localhost:8080/api/v1/account/balance',{
+        axios.get('https://paytmmern.vercel.app/api/v1/account/balance',{
             headers:{
                 "Authorization":`Bearer ${token}`
             }
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
       
 
-        axios.get("http://localhost:8080/api/v1/user/bulk?filter=" + filter,{
+        axios.get("https://paytmmern.vercel.app/api/v1/user/bulk?filter=" + filter,{
           
         }).then(response=>{
             setUsers(response.data.user);
